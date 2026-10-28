@@ -1,0 +1,10 @@
+# SpanCalc holidays example
+
+One holiday per line, `YYYY-MM-DD` format. Lines starting with `#` are
+ignored. Pass the file to the `business` command with `--holidays`.
+
+```text
+2026-11-02
+2026-12-25
+2027-01-01
+```
