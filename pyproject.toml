@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spancalc"
+version = "1.0.0"
+description = "Human-readable duration and date calculator: parse durations, add them to dates, diff datetimes, convert epochs, and count business days."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "gitstq" }]
+keywords = ["duration", "datetime", "calculator", "business-days", "cli"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+spancalc = "spancalc.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["spancalc*"]
